@@ -98,6 +98,8 @@ button.addEventListener("click", () => {
       animateNumbers();
       firstRun = false;
     } else {
+      hoursDisplay.textContent = hours;
+      minutesDisplay.textContent = minutes;
       secondsDisplay.textContent = seconds;
     }
   }, 1000);
