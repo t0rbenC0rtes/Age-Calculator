@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame">
+        <section class="inputs">
+          <div class="inputText">day</div>
+          <div class="inputText">month</div>
+          <div class="inputText">year</div>
+          <input
+            id="dayError"
+            type="number"
+            class="input daysInput"
+            placeholder="DD"
+            min="1"
+            max="31"
+          />
+          <input
+            id="monthError"
+            type="number"
+            class="input monthsInput"
+            placeholder="MM"
+            min="1"
+            max="12"
+          />
+          <input
+            id="yearError"
+            type="number"
+            class="input yearsInput"
+            placeholder="YY"
+          />
+          <div id="dayMsg" class="msg hidden">Must be a valid day</div>
+          <div id="monthMsg" class="msg hidden">Must be a valid month</div>
+          <div id="yearMsg" class="msg hidden">Must be in the past</div>
+        </section>
+        <section class="arrowLine">
+          <div class="line"></div>
+          <svg
+            class="button"
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="hsl(259, 100%, 65%)" stroke="#FFF" stroke-width="3">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+          <div class="line"></div>
+        </section>
+        <section class="timeDisplay">
+          <div class="yearsDisplay">
+            <span class="num" data-val="">- -</span> years
+          </div>
+          <div class="monthsDisplay">
+            <span class="num" data-val="">- -</span> months
+          </div>
+          <div class="daysDisplay">
+            <span class="num" data-val="">- -</span> days
+          </div>
+          <div class="hoursDisplay">
+            <span class="num" data-val="">- -</span> hours
+          </div>
+          <div class="minutesDisplay">
+            <span class="num" data-val="">- -</span> minutes
+          </div>
+          <div class="secondsDisplay">
+            <span class="num" data-val="">- -</span> seconds
+          </div>
+        </section>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Antoine Lafontaine</a>.
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
